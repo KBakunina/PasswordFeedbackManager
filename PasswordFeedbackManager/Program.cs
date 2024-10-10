@@ -8,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+// some comm
 builder.Services.AddSingleton<IPasswordFeedbackService, PasswordFeedbackService>();
 builder.Services.AddMemoryCache();
 
